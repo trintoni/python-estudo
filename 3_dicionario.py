@@ -3,10 +3,10 @@ Dicionarios (Chave: Valor) o famoso KV - Key Value
 
 """
 
-usuario = {'nome': 'Anderson', 'idade': 40, 'altura': 1.74, 'nacionalidade': 'Brasileiro'}
+usuario = {'nome': 'Anderson', 'idade': 40, 'altura': 1.74, 'nacionalidade': 'Brasileiro'} # Definindo um dicionário
 
-print(usuario)
-print(usuario['nome'])
+print(usuario) 
+print(usuario['nome']) # Imprimindo o dicionário, pegando a chave "nome", retornando o valor, "Anderson"
 
 usuario['peso'] = "110 Kg"
 

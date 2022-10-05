@@ -4,13 +4,13 @@
 """
 
 
-
+# Uma lista de carros
 carros = ['monza', 'landal', 'uno', 'gol', 'bmw', 'toyota']
 
 for carro in carros:
-    if carro == 'bmw': # Repare os dois pontos do if e o comparador de igualdade
-        print("Entrou no IF e modificou o bmw: " + carro.upper()) # Mostrar identação
-    else: # Repare os dois pontos
+    if carro == 'bmw': # Repare os dois pontos do if e o comparador de igualdade (==)
+        print("Entrou no IF e modificou o bmw: " + carro.upper()) # Repare na identação do print, o metodo upper(), deixa toda string em maiúscula
+    else: # Repare os dois pontos no else
         print(carro.title())
 
 
