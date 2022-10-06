@@ -1,5 +1,7 @@
-""" Funcoes Lambda 
-
+""" Funcoes:
+    Lambda 
+    Maps
+    Filter
 """
 # Funcao Comun
 preco = 1000

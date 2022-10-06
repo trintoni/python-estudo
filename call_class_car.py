@@ -3,7 +3,7 @@
 # Importando a classe car_class_import e suas c
 from car_class_import import Car, CarroEletrico
 
-
+# Instanciando a Classe Car para my_new_car
 my_new_car = Car('nivus', 'highline', '2021')
 print(my_new_car.get_descriptive_name())
 my_new_car.read_odometer()
