@@ -1,4 +1,4 @@
-class Car():
+class Car(): 
     """Uma Classe representando um carro"""
     def __init__(self, make, model, year):
         self.make = make
@@ -17,7 +17,7 @@ class Car():
     """Metodo usado para incrementar variavel odometer_reading"""  
 
     def update_odometer(self, updatekm):
-        if updatekm >= self.odometer_reading:
+        if updatekm >= self.odometer_reading: # Validando valores para não inserir valores menores que já existem
             self.odometer_reading += updatekm
         else:
             print("ATENCAO: Não é possível reduzir o odometro")
