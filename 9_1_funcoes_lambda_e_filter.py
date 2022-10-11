@@ -2,9 +2,27 @@
     Lambda 
     Maps
     Filter
+    Classe OS e importando variáveis
 """
+# Importando uma Classe (Para tratativas com o sistema operacional)
+import os
+# Classe subprocess para execução de comandos no SO
+import subprocess
+
+# Coletando a variavel de ambiente INPUT_CONSULURL
+CONSUL_URL_BASE = os.environ.get('INPUT_CONSULURL')
+
+print("Imprimindo variavel de ambiente CONSUL_URL_BASE: " + str(CONSUL_URL_BASE))
+
+# rodando ls
+subprocess.run(["ls", "-l"])
+#rodando mkdir
+subprocess.run(["mkdir", "teste"])
+
 # Funcao Comun
 preco = 1000
+
+
 def calcular_imposto(preco):
     return preco * 0.3
 
@@ -51,3 +69,15 @@ que desejamos executar e o x é a lista de execucao.
 Neste caso retornará somente os numeros pares (TRUE) vindos do filtro.
 """
 print(list(filter(par, x)))
+
+
+nova_lista = ["teste", "teste1"]
+
+def exec_command(commands: list, blocked: bool = True) -> tuple:
+    """ Exec Command """
+    print("##################################################")
+    print(f"Exec Command: {CONSUL_URL_BASE}")
+    print("##################################################")
+    return commands, blocked
+
+print(exec_command(nova_lista))
