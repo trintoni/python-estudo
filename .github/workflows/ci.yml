@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World
-        run: "echo Hello World Bitch"
         uses: ./.actions/teste/teste@v1
