@@ -22,17 +22,16 @@ subprocess.run(["mkdir", "teste"])
 # Funcao Comun
 preco = 1000
 
-
 def calcular_imposto(preco):
     return preco * 0.3
 
-print(calcular_imposto(preco))
+print("Calculo do imposto: " + str(calcular_imposto(preco)))
 
 # Funcao Lambda
 calcular_imposto2 = lambda preco: preco * 0.3 
 """ Funcao LAMBDA aqui, faz a mesma funcao que a funcao acima (calcular_imposto), a funcao lambda gerou a funcao calcular_imposto2, 
 chamando o lambda em sequencia, atribuindo a variavel preco: o calculo preco * 0.3"""
-print(calcular_imposto2(preco))
+print("Funcao LAMBDA: " + str(calcular_imposto2(preco)))
 
 
 precos = [100, 500, 10, 25]
@@ -41,12 +40,12 @@ impostos = list(map(calcular_imposto2, precos))
 """A funcao map() pega uma lista, e aplica sobre cada um dos valores dessa lista (precos) uma funcao, no caso
 uma funcao já existente, no caso, calcular_imposto2 (que é uma funcao lambda), ou diretamente uma funcao lambda como abaixo exemplificado.
 Para utilizar o map é necessário passar como argumento uma funcao e uma lista, por exemplo: map(funcao, precos)"""
-print(impostos)
+print("Retorno do MAP: " + str(impostos))
 
 
 # Exemplo de uma funcao lambda diretamente na funcao map()
 impostos1 = list(map(lambda x: x*2, precos)) # Multiplicando por 2
-print(impostos1)
+print("Map executando direto LAMBDA: " + str(impostos1))
 
 
 
@@ -68,7 +67,7 @@ O Filter depende da  funcao list, para obrigatoriamente retornar uma lista. O pr
 que desejamos executar e o x é a lista de execucao.
 Neste caso retornará somente os numeros pares (TRUE) vindos do filtro.
 """
-print(list(filter(par, x)))
+print("Retornando valores Pares da lista x: " + str(list(filter(par, x))))
 
 
 nova_lista = ["teste", "teste1"]
