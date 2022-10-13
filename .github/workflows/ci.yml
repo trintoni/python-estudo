@@ -10,4 +10,4 @@ jobs:
         run: "echo Hello World Bitch"
 
   test_python:
-    uses: trintoni/actions/teste/teste@v1.0
+    uses: ./.actions/teste/teste@v1
