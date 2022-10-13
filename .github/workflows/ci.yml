@@ -10,4 +10,4 @@ jobs:
         run: "echo Hello World Bitch"
 
   test_python:
-    uses: ./.actions/teste@v1
+    uses: actions/teste
