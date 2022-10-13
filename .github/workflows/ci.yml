@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World
-        uses: trintoni/actions/teste/teste@v1
+        uses: trintoni/actions/teste
