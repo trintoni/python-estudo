@@ -8,6 +8,4 @@ jobs:
     steps:
       - name: Hello World
         run: "echo Hello World Bitch"
-
-  test_python:
-    uses: ./.actions/teste/teste@v1
+        uses: ./.actions/teste/teste@v1
