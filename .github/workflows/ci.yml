@@ -3,8 +3,13 @@ name: teste
 on: push
 
 jobs:
-  my_test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Hello World
-        uses: trintoni/actions/teste
+  pipeline:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout Repository      
+        uses: actions/checkout@v2
+      
+      - name: Convair
+        uses: actions/teste@v1
+        with:
+          repository: trintoni/actions
