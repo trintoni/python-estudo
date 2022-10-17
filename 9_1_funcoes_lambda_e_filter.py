@@ -78,9 +78,9 @@ nova_lista = ["teste", "teste1"]
 
 def exec_command(commands: list, blocked: bool = True) -> tuple:
     """ Exec Command """
-    print("##################################################")
+    print("#####################################################")
     print(f"Exec Command: {CONSUL_URL_BASE}")
-    print("##################################################")
+    print("#####################################################")
     return commands, blocked
 
 print(exec_command(nova_lista))
