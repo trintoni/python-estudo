@@ -70,6 +70,10 @@ Neste caso retornará somente os numeros pares (TRUE) vindos do filtro.
 print("Retornando valores Pares da lista x: " + str(list(filter(par, x))))
 
 
+""" Abaixo na funcao exec_command, forçamos os atributos terem suas saídas de acordo com a configuração, no caso temos o atributo
+commands, que obrigatoriamente tem seu retorno uma lista, devido ao list após os :, o atributo blocked, retorna um booleano com o valor
+já configurado sendo TRUE, assim, toda essa execucao é retornada dentro de uma tupla com o comando -> tuple. Execute e repare a saida
+que sera assim: (['teste', 'teste1'], True) - Uma tupla e dentro dela, uma lista e um Booleano com TRUE"""
 nova_lista = ["teste", "teste1"]
 
 def exec_command(commands: list, blocked: bool = True) -> tuple:
