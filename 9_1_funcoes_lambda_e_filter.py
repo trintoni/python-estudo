@@ -84,3 +84,6 @@ def exec_command(commands: list, blocked: bool = True) -> tuple:
     return commands, blocked
 
 print(exec_command(nova_lista))
+
+
+"""FIM do capitulo 9"""
