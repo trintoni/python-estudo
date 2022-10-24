@@ -28,7 +28,7 @@ class Car():
 # Criando a herança de Classe
 class CarroEletrico(Car): # Chamando a Classe pai Car
     def __init__(self, make, model, year):
-        super().__init__(make, model, year) # Funcao especial que cria conecoes entre a classe pai e filho  
+        super().__init__(make, model, year) # Funcao especial que cria conexoes entre a classe pai e filho  
         self.battery_size = 70
     
     def describe_battery(self):

@@ -1,3 +1,5 @@
+
+
 class Car():
     """Uma Classe representando um carro"""
     def __init__(self, make, model, year):
@@ -22,3 +24,15 @@ class CarroEletrico(Car): # Chamando a Classe pai Car
     
     def describe_battery(self):
         print("Este carro tem " + str(self.battery_size) + " kWh de Bateria")
+
+
+
+
+    if __name__ == "__main__":
+        print("TMC INDUSTRY - TRINTONI MAKE CARS")
+
+
+"""
+Explicação do __name__
+https://www.hashtagtreinamentos.com/if__name____main__-no-python?gclid=Cj0KCQjwnbmaBhD-ARIsAGTPcfWf65nJRgkVbFHPw-LgOYEMGV_SydKDR16BKi0ha5piY6wRlxAHhsgaAs7OEALw_wcB
+"""

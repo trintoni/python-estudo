@@ -1,6 +1,6 @@
 """ Importando e chamando Classes"""
 
-# Importando a classe car_class_import e suas c
+# Importando a classe car_class_import e suas classes
 from car_class_import import Car, CarroEletrico
 
 # Instanciando a Classe Car para my_new_car

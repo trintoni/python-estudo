@@ -1,0 +1,5 @@
+environments:
+  prd:
+    name: akspriv-impdocpath-prd
+    resource_group: trinta_aks
+    subscription_id: 1163f6b0-6d5e-486b-9299-9a346dd84823
