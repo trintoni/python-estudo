@@ -2,7 +2,7 @@ name: teste
 
 on: push 
 env:
-  AKS_SECRET: ${{ secrets.AKS_SECRETS }}
+  AKS_SECRET: ${{ secrets.AKS_SECRET }}
 
 jobs:
   pipeline:
