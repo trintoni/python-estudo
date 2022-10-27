@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: trintaacr.azurecr.io/nginx
+        image: trintaacr.azurecr.io/nginx:latest
         ports:
         - containerPort: 80
