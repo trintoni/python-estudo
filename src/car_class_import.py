@@ -26,13 +26,21 @@ class CarroEletrico(Car): # Chamando a Classe pai Car
         print("Este carro tem " + str(self.battery_size) + " kWh de Bateria")
 
 
+""" Pesquisar """
 
+if __name__ == "__main__":
+    print("TMC INDUSTRY - TRINTONI MAKE CARS")
+    my_new_car = Car('nivus', 'highline', '2021')
+    print(my_new_car.get_descriptive_name())
+    my_new_car.read_odometer()
 
-    if __name__ == "__main__":
-        print("TMC INDUSTRY - TRINTONI MAKE CARS")
-
+    my_new_eletric_car = CarroEletrico('Tesla', 'Model X', '2022')
+    print("Meu carro eletrico: " + my_new_eletric_car.get_descriptive_name())
 
 """
 Explicação do __name__
 https://www.hashtagtreinamentos.com/if__name____main__-no-python?gclid=Cj0KCQjwnbmaBhD-ARIsAGTPcfWf65nJRgkVbFHPw-LgOYEMGV_SydKDR16BKi0ha5piY6wRlxAHhsgaAs7OEALw_wcB
+
+Outra explicação
+https://www.youtube.com/watch?v=58drHLc8tJM
 """

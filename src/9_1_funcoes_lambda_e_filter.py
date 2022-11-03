@@ -65,7 +65,7 @@ def par(n):
 """ 
 O Filter depende da  funcao list, para obrigatoriamente retornar uma lista. O primeiro argumento da funcao filter é a função
 que desejamos executar e o x é a lista de execucao.
-Neste caso retornará somente os numeros pares (TRUE) vindos do filtro.
+**** Neste caso retornará somente os numeros pares (TRUE) vindos do filtro. ****
 """
 print("Retornando valores Pares da lista x: " + str(list(filter(par, x))))
 
@@ -74,16 +74,24 @@ print("Retornando valores Pares da lista x: " + str(list(filter(par, x))))
 commands, que obrigatoriamente tem seu retorno uma lista, devido ao list após os :, o atributo blocked, retorna um booleano com o valor
 já configurado sendo TRUE, assim, toda essa execucao é retornada dentro de uma tupla com o comando -> tuple. Execute e repare a saida
 que sera assim: (['teste', 'teste1'], True) - Uma tupla e dentro dela, uma lista e um Booleano com TRUE."""
-nova_lista = ["teste", "teste1"]
 
-def exec_command(commands: list, blocked: bool = True) -> tuple:
-    """ Exec Command """
-    print("#######################---##############################")
+nova_lista = ["THIAGO", "GERSON"]
+
+def exec_command(qqcoisa: list, outra_coisa: bool = True) -> tuple: # PESQUISAR
     print(f"Exec Command: {CONSUL_URL_BASE}")
-    print("#######################---##############################")
-    return commands, blocked
+    return qqcoisa, outra_coisa
 
 print(exec_command(nova_lista))
 
+print(type(exec_command(nova_lista)))
+
+
+
+def exec_command1(teste) -> list: # PESQUISAR
+    return type(teste)
+
+
+
+print("TIPO: " + str(exec_command1(10)))
 
 """FIM do capitulo 9"""

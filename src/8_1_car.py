@@ -23,3 +23,4 @@ my_new_car.read_odometer() # Instancia utilizando outro metodo
 my_new_car.make = "Volkswagen" # Configurando diretamente um atributo da classe, não é uma melhor prática a utilização
 
 print(my_new_car.make) # imprimindo um atributo da classe
+print(nome_do_carro)

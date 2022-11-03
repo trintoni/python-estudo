@@ -1,7 +1,7 @@
 """ Listas
 
 1 - O que é uma lista
-
+2 - São Mutáveis
 """
 
 bicycles = ['trek', 'redline', 'specialized', 'cannondale'] # Criando a lista com conteúdo
@@ -14,7 +14,7 @@ print("\nImprimindo um item específico da lista: " + bicycles[0]) # Mostrando a
 
 print("\nImprimindo outro item específico da lista: " + bicycles[3])
 
-print("\nImprimindo o último item específico da lista: " + bicycles[-1]) # Mostra o ultimo item de uma lista, utilizando o [-1]
+print("\nImprimindo o último item específico da lista: " + bicycles[-1]) # Mostra o ultimo item de uma lista, utilizando o [-1] (ou -2 ou -3 etc, lista ao contrario)
 
 print('\nMinha primera bicicleta era uma ' + bicycles[2].title()) 
 print("\n")
@@ -25,7 +25,7 @@ motos = ['honda', 'yamaha', 'suzuki']
 
 print(motos)
 
-motos[0] = 'Dafra'
+motos[0] = 'Dafra' # Substituirá o item 0 honda por Dafra
 
 print(motos)
 
@@ -38,7 +38,7 @@ motos_usadas = [] # Criando uma lista vazia
 
 motos_usadas = ['Harley Davidson', 'Kawasaki']
 
-motos_usadas.insert(1, 'Royal Enfield') # Insere no local informado (1) o conteúdo Royal Enfield
+motos_usadas.insert(1, 'Royal Enfield') # Insere no local informado (1) o conteúdo Royal Enfield, entrará no meio das 2 motos
 
 print("\nMotos usadas, adicionado uma Royal Enfield na posicao 1")
 print(motos_usadas)
@@ -79,7 +79,7 @@ tamanho_lista = len(motos_zero_km) # Mostra o tamanho da lista
 print("O tamanho da lista é: " + str(tamanho_lista)) # Usando o metodo str para converter a saída da lista em uma string para concatenacao
 
 
-numeros = list(range(1,10)) # Criando uma lista a partir da funcao list() de 1 até 10
+numeros = list(range(1,10)) # Criando uma lista a partir da funcao list() de 1 até 10, como se fosse: numeros = [1,2,3...10]
 print("Criando uma lista a partir da funcao list")
 print(numeros)
 

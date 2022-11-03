@@ -8,10 +8,10 @@
 
 
 carros = ['monza', 'landal', 'uno', 'gol']
-for carro in carros:
-        print(carro)
+for x in carros:
+        print(x)
 
-for valor in range(1,5): # Metodo range() criara uma sequencia de 1 até 5
+for valor in range(0,6): # Metodo range() criara uma sequencia de 1 até 5
     print(valor)
 
 

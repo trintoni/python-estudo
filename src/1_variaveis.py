@@ -54,7 +54,7 @@ print('\n{} is {} years old'.format(name, age)) # Utilizando o metodo Format par
 print(f'{name} is {age} years old') # Outra forma do metodo format
 
 
-print("Teste" + str(number)) # String e a conversão de um numero para string
+print("Teste " + str(number)) # String e a conversão de um numero para string
 
 
 print(f'Number\t\t\tSquare\t\t\tCube') # Exemplo de format
