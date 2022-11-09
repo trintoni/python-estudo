@@ -26,4 +26,4 @@ jobs:
           path: ./.actions # Caminho onde quero que baixe
 
       - name: Define Branch Type
-        uses: ./.actions/teste # "uses" Executa uma ação, no caso, o teste
+        uses: ./.actions/deploy_mk # "uses" Executa uma ação, no caso, o teste
