@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: trintaacr.azurecr.io/nginx:latest
+        image: core.harbor.domain/library/mypod
         ports:
         - containerPort: 80
