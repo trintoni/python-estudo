@@ -11,6 +11,7 @@ env:
   AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
   FUNCIONARIO: ${{ secrets.THIAGO }}
   FILE_DEPLOYMENT: deployment.yaml
+  POD_NAME: makecar
 
 jobs:
   pipeline:
@@ -20,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Convair
-        uses: actions/checkout@v2 # Git clone para dentro do Runner
+        uses: actions/checkout@v2 # Executa o Git clone para dentro do Runner
         with:
           repository: trintoni/actions # Nome do repositorio que quero baixar
           path: ./.actions # Caminho onde quero que baixe
