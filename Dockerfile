@@ -4,3 +4,4 @@ COPY fabrica_carro /opt/
 COPY src /opt/
 USER root
 CMD ls -ltr /opt
+CMD ls -ltr /
