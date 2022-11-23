@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: core.harbor.domain/library/mypod
+        image: core.harbor.domain/library/makecar
         ports:
         - containerPort: 80
