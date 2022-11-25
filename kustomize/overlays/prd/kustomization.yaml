@@ -1,0 +1,13 @@
+resources:
+-  ../../base
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+patchesStrategicMerge:
+- confmapenv.yaml
+
+namespace: testprd
+
+commonLabels:
+  app: test-prd

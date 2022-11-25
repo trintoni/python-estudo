@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deployment-sit
+spec:
+  selector:
+    matchLabels:
+      app: test-sit
+  replicas: 4 # Update the replicas from 2 to 4
+  template:
+    metadata:
+      labels:
+        app: test-sit
+    spec:
+      containers:
+      - name: test
+        image: core.harbor.domain/library/makecar
+        ports:
+        - containerPort: 80
