@@ -7,7 +7,7 @@ kind: Kustomization
 patchesStrategicMerge:
 - confmapenv.yaml
 
-namespace: testprd
+namespace: testprod
 
 commonLabels:
-  app: test-prd
+  app: testprod
